@@ -1,0 +1,315 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 13px;
+    line-height: 1.6;
+/*    font-family: 'Droid Sans', 'Roboto', sans-serif;*/
+    color: hsla(203, 23%, 45%, 0.95);
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 4.3rem 'Droid Serif', 'Roboto', serif;
+    text-shadow: 0 0 1px hsla(224, 100%, 0%, 0.91);
+}
+h2{
+    font: bold 2.8rem 'Droid Serif', 'Roboto', serif;
+    text-shadow: 0 0 1px hsla(224, 100%, 0%, 0.91);
+    text-align: center;
+}
+li, p, a{
+    font: bold 1.5rem 'Droid Sans', 'Roboto', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Droid Sans Mono', 'Roboto', 
+}
+p{
+    padding: 0.5em;
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 95%;
+    margin: 1em auto;
+     border-radius: 4px;
+    background-color: hsla(76, 18%, 90%, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+}
+
+header{
+    width: 100%;
+    background-image: url("https://loremflickr.com/750/400/gulab jamun, sweet");
+    background-size: cover;
+    padding: 2rem;
+    background-position: center center;
+    background-color: hsla(203, 23%, 42%, 0.95);
+    border-radius: 5px 5px 0 0;
+    border-bottom: 2px solid hsla(76, 18%, 90%, 1);
+    transition: all 0.3s;
+    color: hsla(106, 100%, 90%, 1);
+    
+}
+nav{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+nav>ul{
+    width: 100%;
+}
+nav li{
+    width: 100%;
+    list-style: none;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem 'Droid Sans', 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: hsla(360, 100%, 100%, 1);
+    border: 1px solid hsla(360, 100%, 100%, 1);
+    background-color: hsla(203, 23%, 63%, 0.95);
+    transition: background 0.5s;
+    
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    background-color: hsla(203, 10%, 50%, 1);
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2em 1em;
+    
+}
+.col{
+    float: none;
+    width: 100%;
+    text-align: justify;
+    
+}
+.col img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: hsla(360, 100%, 100%, 1);
+    border-radius: 5px;
+}
+.img{
+    text-align: center;
+    padding: 0.7em;
+    border-radius: 4px;
+    background-color: hsla(0, 100%, 100%, 1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); 
+}
+footer{
+    width: 100%;
+    padding-left:4em;
+    background-color: hsla(203, 10%, 50%, 1);
+    color: hsla(0, 0%, 81%, 0.88);
+    border-radius: 0 0 6px 6px;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer li{
+    width: 100%;
+    list-style: none;
+}
+footer a,
+footer a:link,
+footer a:visited{
+    text-decoration: none;
+    color: hsla(240, 2%, 31%, 1);
+    font-size: 0.9em;
+}
+footer a:focus,
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width:600px){
+    .wrapper{
+        width: 95%
+    }
+    h1{
+        font-size: 5em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    li, p, a{
+        font-size: 1.5em;
+    }
+    nav li{
+        width: 20%;
+        float: left;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited{
+        font-size: 1.5rem;
+        border: none;
+    }
+    main{
+        width: 90%;
+        margin-top: 2em;
+        padding: 2em 0 0.5em 0;
+    }
+    .col {
+        width: 50%;
+    }
+    .img{
+        width: 50%;
+        font-size: 0.8em;
+        float: left;
+    }
+    .first{
+        float: left;
+        padding-right: 1.5em;
+    }
+    .second{
+        float:right;
+        padding-left: 1.5em;
+    }
+    footer{
+        width: 95%;
+        clear: both ;
+        height: 9em;
+    }
+    footer li{
+        width: 32%;
+        float: left;
+        padding-top: 1em;
+    }
+}
+@media screen and (min-width: 800px){
+     .wrapper{
+        width: 90%
+    }
+    h1{
+        font-size: 6em;
+    }
+    h2{
+        font-size: 2.2em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    .img{
+        width: 50%;
+    }
+    nav{
+        width:  90%;
+        margin: 0.4em auto 0 auto;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited{
+        font-size: 1.5rem;
+        color: hsla(203, 23%, 42%, 0.95);
+        background-color: hsla(76, 18%, 90%, 1);
+        transition: all 0.5s;
+        border: none;
+    }
+    nav a:active,
+    nav a:focus,
+    nav a:hover{
+        color: hsla(203, 23%, 42%, 0.95);
+        border-bottom: 2px solid hsla(203, 23%, 42%, 0.95);
+    }
+    main {
+        padding-top: 3em; 
+        padding-bottom: 1em;
+    }
+      .first{
+        padding-right: 1.5em;
+    }
+    .second{
+        padding-left: 1.5em;
+    }
+    footer{
+        height: 10em;
+    }
+     
+}
+@media screen and (min-width: 1200px){
+    h1{
+        font-size: 7em;
+    }
+    h2{
+        font-size: 3em;
+    }
+    header {
+        padding: 4em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    main{
+        width: 70%;
+        padding: 0 8% 0 0;
+        margin-top: 8em;
+    }
+    nav{
+        width:  30%;
+        float: left;
+        margin-top: 7.5em;
+    }
+    nav li {
+        width: 100%;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited{
+        padding: 0 0 0.5em 30%;
+        font-size: 1.7em;
+        text-align: left;
+        border: none;
+    }
+    nav a:active,
+    nav a:focus,
+    nav a:hover{
+        padding-left: 35%;
+    }
+    .img{
+        width: 55%;
+        font-size: 0.95em;
+    }
+    .first {
+        padding-right: 2em;
+    }
+    .second {
+        padding-left: 2em;
+    }
+}
+
